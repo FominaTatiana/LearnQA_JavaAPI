@@ -11,7 +11,7 @@ public class TestJson {
                 .get("https://playground.learnqa.ru/api/get_json_homework")
                 .jsonPath();
 
-        String message = response.get("messages.message[2]");
+        String message = response.get("messages.timestamp[1]");
         System.out.println(message);
     }
 }
